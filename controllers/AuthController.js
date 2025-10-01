@@ -1,6 +1,5 @@
 import UserModel from "../models/UserModel.js";
 import bcrypt from "bcryptjs";
-// import { compare } from "bcryptjs";
 
 //Registro de Usuarios
 export const registerController = async (req, res) => {
