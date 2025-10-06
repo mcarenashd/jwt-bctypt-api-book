@@ -4,6 +4,7 @@ import db_connection from "./database/db_connection.js"
 import BookModel from "./models/BookModel.js"
 import UserModel from "./models/UserModel.js"
 import authRouter from "./routes/authRoutes.js"
+import "dotenv/config";
 
 export const app = express()
 app.get("/", (req, res)=>{
