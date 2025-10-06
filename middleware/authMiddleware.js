@@ -1,5 +1,5 @@
-import UserModel from "../models/UserModel";
-import { verifyToken } from "../utils/handleJWT";
+import UserModel from "../models/UserModel.js";
+import { verifyToken } from "../utils/handleJWT.js";
 
 export const authMiddleware = async (req, res, next) => {
   try {
