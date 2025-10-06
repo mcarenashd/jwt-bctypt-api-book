@@ -11,6 +11,7 @@ export const authMiddleware = async (req, res, next) => {
     const user = await UserModel.findByPk(dataToken.id)
     req.user = user
     next()
-  } catch (error) {}
+  } catch (error) {
   res.status(401).json({error:"NOT_SESSION", message: error.message})
+  }
 };
