@@ -1,7 +1,7 @@
 import UserModel from "../models/UserModel";
 import { verifyToken } from "../utils/handleJWT";
 
-const authMiddleware = async (req, res, next) => {
+export const authMiddleware = async (req, res, next) => {
   try {
     if (!req.headers.authorization){
       return res.status(401).json({ error: "NEED_SESSION" });
