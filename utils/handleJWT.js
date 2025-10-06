@@ -15,4 +15,11 @@ export const tokenSign = async (user) => {
   return sign
 };
 
-export const verifyToken = async () => {};
+export const verifyToken = async (token) => {
+  try{
+    return jwt.verify(token, JWT_SECRET)
+
+  } catch(error){
+    return null
+  }
+};
