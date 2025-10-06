@@ -5,6 +5,6 @@ const bookRouter = express.Router()
 bookRouter.get("/", getAllBooks)
 bookRouter.post("/", createBook)
 bookRouter.delete("/:id", deleteBook)
-//bookRouter.update("/:id", updateBook)
+// bookRouter.update("/:id", updateBook)
 
 export default bookRouter
